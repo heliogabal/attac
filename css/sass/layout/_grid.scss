@@ -1,0 +1,125 @@
+// ---------------------------------------------------------------------------
+// Imports.
+
+// With Susy 1 installed...
+//@import "susy"; // Susy Grids
+
+// With Susy 2 installed...
+//@import "susyone";
+
+@import "compass";
+@import "singularitygs"; // Singularity Grid System
+// @import "zen"; // Zen Grids
+@import "breakpoint"; //@Media Query Mixins
+
+* {
+  @include box-sizing('border-box');
+}
+
+/*html body.admin-menu {
+    margin-top: 41px !important;
+}*/
+
+// Layout Breakpoints
+$mobile: 30em;
+$tab: 50em;
+$desk: 70em;
+$standard: 90em;
+$wide: 100em;
+
+// Singularity 1.0 Syntax
+$grids: 4;
+$grids: add-grid(12 at $tab);
+$gutters: 1/2;
+/*$gutter-styles: 'split';*/
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 18px;
+$horz-spacing-unit: 1em;
+
+$debug: 'true';
+
+.container {
+  /*@include background-grid($color: blue);*/
+  @include clearfix;
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 90%;
+}
+@include breakpoint($tab, true) {
+  .one-sidebar.sidebar-first .sidebar-first,
+  .two-sidebars .sidebar-first {
+    @include grid-span(4, 1);
+  }
+  .one-sidebar.sidebar-first .main-content,
+  .two-sidebars .main-content {
+    @include grid-span(8, 5);
+  }
+  .two-sidebars .sidebar-second {
+    @include grid-span(4, 1);
+    clear: left;
+  }
+  .hauptmenu {
+    @include grid-span(12,1);
+  }
+  .siteinfo {
+    @include grid-span(3, 1);
+    clear: left;
+  }
+  .header-region {
+    @include grid-span(9, 4);
+  }
+  .follow {
+    @include grid-span(12,1);
+  }
+  .search {
+    @include grid-span(12,1);
+    clear: right;
+  }
+  /*.banner {
+    @include grid-span(6, 4);
+    clear: right;
+  }
+  .plenum {
+    @include grid-span(3, 10);
+  }*/
+}
+@include breakpoint(1090, true) {
+
+}
+@include breakpoint($desk, true) {
+  .main-content p {
+    max-width: 35em;
+  }
+  /*.siteinfo {
+    @include grid-span(3, 1);
+  }
+  .hauptmenu {
+    @include grid-span(9,4);
+  }
+  .follow {
+    @include grid-span(4,9);
+    clear: right;
+  }
+  .banner {
+    @include grid-span(6, 4);
+    clear: right;
+  }
+  .plenum {
+    @include grid-span(3, 10);
+  }*/
+  .one-sidebar.sidebar-first .sidebar-first {
+    @include grid-span(3, 1);
+  }
+  .one-sidebar.sidebar-first .main-content {
+    @include grid-span(9, 4);
+  }
+  .two-sidebars .sidebar-first {
+    @include grid-span(3, 1);
+  }
+  .two-sidebars .main-content {
+    @include grid-span(6, 4);
+  }
+  .two-sidebars .sidebar-second {
+    @include grid-span(3, 10);
+  }
+}

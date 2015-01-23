@@ -1,0 +1,20 @@
+span.follow-link-wrapper a {
+  float: right;
+  text-indent: -999em;
+}
+a.follow-link {
+    height: 50px;
+    width: 44px;
+    display: block;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 5px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
+a.follow-link:hover {
+    -webkit-filter: none;
+    filter: none;
+}

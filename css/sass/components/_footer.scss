@@ -1,0 +1,38 @@
+footer {
+  ul {
+    float: left;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+  .buero {
+    float: left;
+  }
+  nav {
+    float: right;
+  }
+}
+
+$footer-height: 75px;
+$footer-top-margin: 50px;
+@include breakpoint($tab, true) {
+    html {height: 100%;}
+    body {height: 100%;}
+
+    .sticky {
+    min-height: 100%;
+    .page {
+      overflow: auto;
+      padding-bottom: $footer-height + $footer-top-margin;
+      }
+    }
+
+    body > #footer-wrapper {
+      clear: both;
+      height: $footer-height;
+      margin-top: -($footer-height);
+      position: relative;
+    }
+}

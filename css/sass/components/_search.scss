@@ -1,0 +1,15 @@
+.search {
+  .views-exposed-form {
+    float: right;
+    .views-exposed-widgets {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+    }
+    .views-exposed-widget {
+        padding: 0;
+    }
+    .views-widget-filter-search_api_views_fulltext {
+        padding: 0.3em 0;
+    }
+  }
+}

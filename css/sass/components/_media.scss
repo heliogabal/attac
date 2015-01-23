@@ -1,0 +1,49 @@
+// Img border in a's and image quality.
+// -------------------------
+
+img {
+  // Responsive images (ensure images don't scale beyond their parents).
+  max-width: 100%; // Part 1: Set a maxium relative to the parent.
+  width: auto\9; // IE7-8 need help adjusting responsive images.
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching.
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+// Prevent max-width from affecting Google Maps.
+#map_canvas img {
+  max-width: none;
+}
+.media-artikelbild_links {
+    float: left;
+    margin: 5px 1em 0 0;
+    max-width: 300px;
+}
+.media-artikelbild_rechts {
+    float: right;
+    margin: 5px 0 0 1em;
+    max-width: 300px;
+}
+.caption {
+  font-size: small;
+  margin: 2px 5px 1em 10px;
+  line-height: 1.1;
+  max-width: 275px;
+}
+
+// Display block in IE6-9 and FF3.
+// -------------------------
+
+audio,
+canvas,
+video {
+  @include inline-block;
+}
+
+// Prevents modern browsers from displaying 'audio' without controls.
+// -------------------------
+
+audio:not([controls]) {
+  display: none;
+}

@@ -1,0 +1,29 @@
+body {
+  background: #f0f0f0;
+}
+#header-wrapper {
+  background: #fff;
+}
+#footer-wrapper {
+  background: #0074AA;
+  padding: 1em 0;
+  footer {
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+}
+.btn-flat {
+    background: none repeat scroll 0 0 #f7941d;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    padding: 1em;
+    letter-spacing: .5px;
+}
+.btn-flat:hover {
+  text-decoration: none;
+  color: #fff;
+  background: $blue;
+}

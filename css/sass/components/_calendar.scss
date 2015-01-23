@@ -1,0 +1,193 @@
+.pager {
+  .date-prev {
+    margin: 0 1em 0 0;
+  }
+  li {
+    border-radius: 3px;
+    border: 0;
+    &:hover {
+      background: $orange;
+      color: #fff;
+    }
+    a:hover {
+      background: $orange;
+      color: #fff;
+    }
+  }
+}
+.calendar-calendar {
+  div.calendar {
+    font-size: .9em;
+    line-height: 1.4;
+  }
+  .views-field-field-termin-wann,
+  .views-field-field-termin-was {
+    font-size: 0.8em;
+  }
+  .contents {
+    padding: 5px 10px !important;
+  }
+  th.days {
+    background-color: #1db2f7;
+    color: #fff;
+  }
+  .month-view .full td.single-day div.monthview, .week-view .full td.single-day div.weekview, .day-view .full td.single-day div.dayview {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 0;
+    margin: 5px;
+    width: auto;
+    border-radius: 3px;
+  }
+  .month-view .full tr td.single-day.today {
+    border-bottom: 2px solid $orange;
+    border-left: 2px solid $orange;
+    border-right: 2px solid $orange;
+  }
+  .month-view .full td.date-box.today {
+    border-color: $orange;
+    border-style: solid;
+    border-width: 2px 2px 0;
+    background: $orange;
+  }
+  td.today .inner div.day a {
+    color: #fff;
+  }
+}
+.page-termine {
+  .view-id-termine {
+    position: relative;
+  }
+  .view-filters {
+    position: absolute;
+    right: 0;
+    top: -5em;
+  }
+  .views-exposed-form .views-exposed-widget {
+    padding: 0;
+    select {
+      height: auto;
+      margin: 0;
+      font-size: 1em;
+        option {
+          padding: .5em;
+        }
+    }
+  }
+  #edit-field-termin-was-tid-wrapper {
+      margin-right: 1em;
+    }
+  ul.primary {
+  border-bottom: 0;
+  margin: 2em 0;
+  padding: 0;
+  li a {
+      background: #fff;
+      border-color: #fff;
+      margin: 0 .5em 0 0;
+      padding: .5em 1em;
+      &:hover {
+        background: $orange;
+        border-color: $orange;
+        color: #fff;
+      }
+  }
+  li.active a {
+    background-color: #1db2f7;
+    border: 1px solid #1db2f7;
+    color: #fff;
+  }
+  }
+}
+/* Colorbox */
+#cboxLoadedContent {
+  padding: 0 1em 1em;
+  margin-bottom: 2em;
+}
+#cboxCurrent {
+  left: 300px;
+  padding: 0 0 .5em 0;
+}
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
+  padding: 1em;
+}
+/* Upcoming Block */
+.upcoming {
+  ul {
+    margin: 0;
+  }
+  li.termin {
+      list-style: none;
+      padding: 0 1em .5em;
+      border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+      margin-bottom: .5em;
+      overflow: hidden;
+      a {
+        display: block;
+      }
+  }
+  li.termin:before {
+    font-family: FontAwesome;
+    content: "\f073";
+    float: left;
+    padding-right: .5em;
+  }
+  time {
+    float: left;
+    clear: left;
+    font-size: small;
+  }
+  .was {
+    float: left;
+    clear: left;
+    font-size: small;
+    line-height: 1;
+  }
+}
+
+@media screen and ( max-width: 1023px ) {
+  .page-termine .view-filters {
+    position: static;
+  }
+  .date-box {
+    display: none;
+  }
+    .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
+      margin: 1em;
+  }
+  .calendar-calendar .month-view .full td, .calendar-calendar .week-view .full td, .calendar-calendar .day-view td {
+    padding: .5em;
+  }
+  .calendar-calendar .month-view .full tr td.single-day.today {
+    border: 5px solid $orange;
+  }
+  .view .date-nav-wrapper .date-heading {
+    text-align: left;
+  }
+  .calendar-calendar .month-view table.full {
+    position: relative;
+  }
+  .calendar-calendar .month-view .full tr td {
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+  .calendar-calendar tbody tr:hover td {
+    background: none;
+  }
+  .calendar-calendar .month-view .full tr.single-day {
+    border-top: 1px solid #ccc;
+  }
+  .calendar-calendar .month-view .full tr td.single-day:before {
+    content: attr(data-day-of-month) ".\0000a0" attr(headers);
+    font-weight: bold;
+  }
+  .calendar-calendar .month-view .full thead tr,
+  .calendar-calendar .month-view .full tr th.days,
+  .calendar-calendar .month-view .full tr td.date-box,
+  .calendar-calendar .month-view .full tr td.no-entry,
+  .calendar-calendar .month-view .full tr td.empty {
+    display: none;
+  }
+}

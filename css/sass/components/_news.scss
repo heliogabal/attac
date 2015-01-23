@@ -1,0 +1,48 @@
+.node-teaser img {
+  float: left;
+  margin: 0 1em 0.5em 0;
+}
+.field-name-field-news-bild {
+  float: left;
+  margin: 0 2em 1em 0;
+}
+.label-above, .label-inline {
+  font-weight: bold;
+}
+.label-inline {
+  display: inline;
+}
+.field-name-field-koordinaten {
+  margin-top: 1em;
+}
+.news {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  aside {
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    .field {
+      float: left;
+      margin-right: 1em;
+      padding: 1em;
+      position: relative;
+    }
+    .field-name-field-termin-wann:before {
+      font-family: FontAwesome;
+      content: "\f017";
+      padding: 0 .5em 0 0;
+    }
+    .field-name-field-termin-was:before {
+      font-family: FontAwesome;
+      content: "\f02b";
+      padding: 0 .5em 0 0;
+    }
+    .field-name-field-termin-wo:before {
+      font-family: FontAwesome;
+      content: "\f041";
+      padding: 0 .5em 0 0;
+    }
+    .more-link {
+      float: right;
+    }
+  }
+}
