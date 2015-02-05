@@ -15,6 +15,15 @@
     }
   }
 }
+.pane-termine {
+  ul {
+    margin-bottom: 0;
+    li {
+      list-style: none;
+      padding-top: 1em;
+    }
+  }
+}
 .calendar-calendar {
   div.calendar {
     font-size: .9em;
@@ -119,9 +128,8 @@
   }
   li.termin {
       list-style: none;
-      padding: 0 1em .5em;
+      padding: .5em 1em;
       border-bottom: 1px solid rgba(160, 160, 160, 0.2);
-      margin-bottom: .5em;
       overflow: hidden;
       a {
         display: block;

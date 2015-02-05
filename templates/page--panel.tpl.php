@@ -9,7 +9,7 @@
 <?php } ?>
 
 <?php print $mothership_poorthemers_helper; ?>
-
+<div class="sticky">
 <?php if ($page['user_bar']): ?>
   <div id="user-wrapper" class="fullwidth">
     <div class="container">
@@ -70,38 +70,40 @@
 <?php endif; ?>
 
 <div id="panel-wrapper" class="fullwidth">
-  <div role="main" id="main-content">
+  <div class="container">
+    <div role="main" class="main-content">
 
-    <?php if ($action_links): ?>
-      <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php if ($action_links): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+
+      <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
+        <nav class="tabs"><?php print render($tabs); ?></nav>
+      <?php endif; ?>
+
+      <?php print render($page['content_pre']); ?>
+
+      <?php print render($page['content']); ?>
+
+      <?php print render($page['content_post']); ?>
+
+    </div><!--/main-->
+
+    <?php if ($page['sidebar_first']): ?>
+      <div class="sidebar-first">
+      <?php print render($page['sidebar_first']); ?>
+      </div>
     <?php endif; ?>
 
-    <?php if (isset($tabs['#primary'][0]) || isset($tabs['#secondary'][0])): ?>
-      <nav class="tabs"><?php print render($tabs); ?></nav>
+    <?php if ($page['sidebar_second']): ?>
+      <div class="sidebar-second">
+        <?php print render($page['sidebar_second']); ?>
+      </div>
     <?php endif; ?>
-
-    <?php print render($page['content_pre']); ?>
-
-    <?php print render($page['content']); ?>
-
-    <?php print render($page['content_post']); ?>
-
-  </div><!--/main-->
-
-  <?php if ($page['sidebar_first']): ?>
-    <div class="sidebar-first">
-    <?php print render($page['sidebar_first']); ?>
-    </div>
-  <?php endif; ?>
-
-  <?php if ($page['sidebar_second']): ?>
-    <div class="sidebar-second">
-      <?php print render($page['sidebar_second']); ?>
-    </div>
-  <?php endif; ?>
 
 </div><!--/#content-wrapper-->
-
+</div><!--/.container-->
+</div>
 <?php if ($page['footer']): ?>
   <div id="footer-wrapper" class="fullwidth">
     <div class="container">

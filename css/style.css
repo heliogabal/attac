@@ -3801,26 +3801,31 @@ footer nav {
   border-radius: 2px;
   clear: both; }
   /* line 7, sass/base/_blocks.scss */
-  .card h2.title {
+  .card h2 {
     background: #f0f0f0;
     padding: 0 0 .5em 0;
     margin: 0; }
   /* line 12, sass/base/_blocks.scss */
+  .card h2.panel-title {
+    background: #fff;
+    margin: 13px 0;
+    padding: 0; }
+  /* line 17, sass/base/_blocks.scss */
   .card .panel-heading {
     overflow: hidden;
     padding: 0 1em; }
-  /* line 16, sass/base/_blocks.scss */
+  /* line 21, sass/base/_blocks.scss */
   .card form {
     padding: 0 1em; }
-  /* line 19, sass/base/_blocks.scss */
+  /* line 24, sass/base/_blocks.scss */
   .card .panel-body {
     padding: 1em; }
 
-/* line 23, sass/base/_blocks.scss */
+/* line 28, sass/base/_blocks.scss */
 .protokoll {
   padding: 0 1em; }
 
-/* line 26, sass/base/_blocks.scss */
+/* line 31, sass/base/_blocks.scss */
 .protokoll h2.title {
   background: #fff; }
 
@@ -3864,21 +3869,29 @@ a.follow-link:hover {
     color: #fff; }
 
 /* line 19, sass/components/_calendar.scss */
+.pane-termine ul {
+  margin-bottom: 0; }
+  /* line 21, sass/components/_calendar.scss */
+  .pane-termine ul li {
+    list-style: none;
+    padding-top: 1em; }
+
+/* line 28, sass/components/_calendar.scss */
 .calendar-calendar div.calendar {
   font-size: .9em;
   line-height: 1.4; }
-/* line 24, sass/components/_calendar.scss */
+/* line 33, sass/components/_calendar.scss */
 .calendar-calendar .views-field-field-termin-wann,
 .calendar-calendar .views-field-field-termin-was {
   font-size: 0.8em; }
-/* line 27, sass/components/_calendar.scss */
+/* line 36, sass/components/_calendar.scss */
 .calendar-calendar .contents {
   padding: 5px 10px !important; }
-/* line 30, sass/components/_calendar.scss */
+/* line 39, sass/components/_calendar.scss */
 .calendar-calendar th.days {
   background-color: #1db2f7;
   color: #fff; }
-/* line 34, sass/components/_calendar.scss */
+/* line 43, sass/components/_calendar.scss */
 .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
   background: none repeat scroll 0 0 #fff;
   border: 1px solid #ddd;
@@ -3887,106 +3900,105 @@ a.follow-link:hover {
   margin: 5px;
   width: auto;
   border-radius: 3px; }
-/* line 43, sass/components/_calendar.scss */
+/* line 52, sass/components/_calendar.scss */
 .calendar-calendar .month-view .full tr td.single-day.today {
   border-bottom: 2px solid #f7941d;
   border-left: 2px solid #f7941d;
   border-right: 2px solid #f7941d; }
-/* line 48, sass/components/_calendar.scss */
+/* line 57, sass/components/_calendar.scss */
 .calendar-calendar .month-view .full td.date-box.today {
   border-color: #f7941d;
   border-style: solid;
   border-width: 2px 2px 0;
   background: #f7941d; }
-/* line 54, sass/components/_calendar.scss */
+/* line 63, sass/components/_calendar.scss */
 .calendar-calendar td.today .inner div.day a {
   color: #fff; }
 
-/* line 59, sass/components/_calendar.scss */
+/* line 68, sass/components/_calendar.scss */
 .page-termine .view-id-termine {
   position: relative; }
-/* line 62, sass/components/_calendar.scss */
+/* line 71, sass/components/_calendar.scss */
 .page-termine .view-filters {
   position: absolute;
   right: 0;
   top: -5em; }
-/* line 67, sass/components/_calendar.scss */
+/* line 76, sass/components/_calendar.scss */
 .page-termine .views-exposed-form .views-exposed-widget {
   padding: 0; }
-  /* line 69, sass/components/_calendar.scss */
+  /* line 78, sass/components/_calendar.scss */
   .page-termine .views-exposed-form .views-exposed-widget select {
     height: auto;
     margin: 0;
     font-size: 1em; }
-    /* line 73, sass/components/_calendar.scss */
+    /* line 82, sass/components/_calendar.scss */
     .page-termine .views-exposed-form .views-exposed-widget select option {
       padding: .5em; }
-/* line 78, sass/components/_calendar.scss */
+/* line 87, sass/components/_calendar.scss */
 .page-termine #edit-field-termin-was-tid-wrapper {
   margin-right: 1em; }
-/* line 81, sass/components/_calendar.scss */
+/* line 90, sass/components/_calendar.scss */
 .page-termine ul.primary {
   border-bottom: 0;
   margin: 2em 0;
   padding: 0; }
-  /* line 85, sass/components/_calendar.scss */
+  /* line 94, sass/components/_calendar.scss */
   .page-termine ul.primary li a {
     background: #fff;
     border-color: #fff;
     margin: 0 .5em 0 0;
     padding: .5em 1em; }
-    /* line 90, sass/components/_calendar.scss */
+    /* line 99, sass/components/_calendar.scss */
     .page-termine ul.primary li a:hover {
       background: #f7941d;
       border-color: #f7941d;
       color: #fff; }
-  /* line 96, sass/components/_calendar.scss */
+  /* line 105, sass/components/_calendar.scss */
   .page-termine ul.primary li.active a {
     background-color: #1db2f7;
     border: 1px solid #1db2f7;
     color: #fff; }
 
 /* Colorbox */
-/* line 104, sass/components/_calendar.scss */
+/* line 113, sass/components/_calendar.scss */
 #cboxLoadedContent {
   padding: 0 1em 1em;
   margin-bottom: 2em; }
 
-/* line 108, sass/components/_calendar.scss */
+/* line 117, sass/components/_calendar.scss */
 #cboxCurrent {
   left: 300px;
   padding: 0 0 .5em 0; }
 
-/* line 112, sass/components/_calendar.scss */
+/* line 121, sass/components/_calendar.scss */
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
   padding: 1em; }
 
 /* Upcoming Block */
-/* line 117, sass/components/_calendar.scss */
+/* line 126, sass/components/_calendar.scss */
 .upcoming ul {
   margin: 0; }
-/* line 120, sass/components/_calendar.scss */
+/* line 129, sass/components/_calendar.scss */
 .upcoming li.termin {
   list-style: none;
-  padding: 0 1em .5em;
+  padding: .5em 1em;
   border-bottom: 1px solid rgba(160, 160, 160, 0.2);
-  margin-bottom: .5em;
   overflow: hidden; }
-  /* line 126, sass/components/_calendar.scss */
+  /* line 134, sass/components/_calendar.scss */
   .upcoming li.termin a {
     display: block; }
-/* line 130, sass/components/_calendar.scss */
+/* line 138, sass/components/_calendar.scss */
 .upcoming li.termin:before {
   font-family: FontAwesome;
   content: "\f073";
   float: left;
   padding-right: .5em; }
-/* line 136, sass/components/_calendar.scss */
+/* line 144, sass/components/_calendar.scss */
 .upcoming time {
   float: left;
   clear: left;
   font-size: small; }
-/* line 141, sass/components/_calendar.scss */
+/* line 149, sass/components/_calendar.scss */
 .upcoming .was {
   float: left;
   clear: left;
@@ -3994,54 +4006,54 @@ a.follow-link:hover {
   line-height: 1; }
 
 @media screen and (max-width: 1023px) {
-  /* line 150, sass/components/_calendar.scss */
+  /* line 158, sass/components/_calendar.scss */
   .page-termine .view-filters {
     position: static; }
 
-  /* line 153, sass/components/_calendar.scss */
+  /* line 161, sass/components/_calendar.scss */
   .date-box {
     display: none; }
 
-  /* line 156, sass/components/_calendar.scss */
+  /* line 164, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
     margin: 1em; }
 
-  /* line 159, sass/components/_calendar.scss */
+  /* line 167, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full td, .calendar-calendar .week-view .full td, .calendar-calendar .day-view td {
     padding: .5em; }
 
-  /* line 162, sass/components/_calendar.scss */
+  /* line 170, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr td.single-day.today {
     border: 5px solid #f7941d; }
 
-  /* line 165, sass/components/_calendar.scss */
+  /* line 173, sass/components/_calendar.scss */
   .view .date-nav-wrapper .date-heading {
     text-align: left; }
 
-  /* line 168, sass/components/_calendar.scss */
+  /* line 176, sass/components/_calendar.scss */
   .calendar-calendar .month-view table.full {
     position: relative; }
 
-  /* line 171, sass/components/_calendar.scss */
+  /* line 179, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr td {
     width: 100%;
     float: left;
     text-align: left; }
 
-  /* line 176, sass/components/_calendar.scss */
+  /* line 184, sass/components/_calendar.scss */
   .calendar-calendar tbody tr:hover td {
     background: none; }
 
-  /* line 179, sass/components/_calendar.scss */
+  /* line 187, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr.single-day {
     border-top: 1px solid #ccc; }
 
-  /* line 182, sass/components/_calendar.scss */
+  /* line 190, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr td.single-day:before {
     content: attr(data-day-of-month) ".\0000a0" attr(headers);
     font-weight: bold; }
 
-  /* line 190, sass/components/_calendar.scss */
+  /* line 198, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full thead tr,
   .calendar-calendar .month-view .full tr th.days,
   .calendar-calendar .month-view .full tr td.date-box,
