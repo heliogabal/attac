@@ -1,0 +1,41 @@
+.ag-menu {
+  h2 {
+    font-size: 1em;
+    background: #fff;
+    border-bottom: 1px solid $orange;
+    padding: 0;
+
+    text-align: center;
+    font-weight: bold;
+    a {
+      display: block;
+      line-height: 1.5;
+      padding: .5em 0;
+      &:hover {
+        text-decoration: none;
+        background: $orange;
+        color: #fff;
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+/* Align Content with Menu */
+.panels-flexible-2 .panels-flexible-region-inside {
+    margin-top: 1.2em;
+}
+.field-name-field-bilder {
+    margin-top: 0.8em;
+}
+
+/* Hide Scald Author and Tags Fields for now */
+.field-name-scald-authors,
+.field-name-scald-tags,
+.dnd-caption-wrapper {
+  display: none;
+}
