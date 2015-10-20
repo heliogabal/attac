@@ -240,3 +240,10 @@ $popoverTitleBackground:  darken($popoverBackground, 3%) !default;
 // Special enhancement for popovers
 $popoverArrowOuterWidth:  $popoverArrowWidth + 1 !default;
 $popoverArrowOuterColor:  rgba(0,0,0,.25) !default;
+
+// Media Queries
+$br-mobil: min-width 480px;
+$br-tablet: min-width 767px;
+$br-850: min-width 850px;
+$br-desk: min-width 1024px;
+$br-wide: min-width 1280px;

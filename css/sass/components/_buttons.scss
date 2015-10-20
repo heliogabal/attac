@@ -500,3 +500,29 @@ input[type="submit"].btn {
   color: $grayDark;
   text-decoration: none;
 }
+
+/* More Link */
+
+.field-name-node-link {
+  float: right;
+  text-transform: uppercase;
+  margin: .5em;
+  padding: .5em;
+  display: block;
+}
+
+/* Plenum Buttons */
+.field-name-field-plenum-wann,
+.field-name-field-termin-wo {
+  margin: .5em 0;
+}
+.field-name-field-plenum-wann:before {
+      font-family: FontAwesome;
+      content: "\f017";
+      padding: 0 .5em 0 0;
+    }
+.field-name-field-termin-wo:before {
+      font-family: FontAwesome;
+      content: "\f041";
+      padding: 0 .5em 0 0;
+    }

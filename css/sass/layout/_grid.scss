@@ -43,7 +43,10 @@ $debug: 'true';
   @include clearfix;
   margin: 0 auto;
   max-width: 1600px;
-  width: 90%;
+  width: 95%;
+  @include breakpoint($desk, true) {
+    width: 90%
+  }
 }
 @include breakpoint($tab, true) {
   .one-sidebar.sidebar-first .sidebar-first,
@@ -88,7 +91,7 @@ $debug: 'true';
 }
 @include breakpoint($desk, true) {
   .main-content p {
-    max-width: 35em;
+    max-width: 40em;
   }
   /*.siteinfo {
     @include grid-span(3, 1);

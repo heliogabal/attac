@@ -18,8 +18,11 @@ nav.hauptmenu {
         padding: 0;
       }
       a {
-        padding: 1em;
+        padding: .75em;
         display: block;
+        @include breakpoint($br-wide, true) {
+          padding: 1em;
+        }
         &:hover {
           background: $orange;
           color: #fff;
@@ -29,6 +32,9 @@ nav.hauptmenu {
           background: $blue;
           color: #fff;
           text-decoration: none;
+        }
+        &.active:hover {
+          cursor: default;
         }
       }
     }
@@ -45,15 +51,40 @@ nav.hauptmenu {
 }
 
 .sidemenu {
+  ul {
+    margin: 0;
+  }
+  ul ul {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+    }
   li {
     line-height: 1;
+    &.expanded, &.collapsed, &.leaf {
+      padding: 0;
+    }
+    &.expanded a {
+        border-bottom: 0;
+    }
+    ul li a{
+      padding-left: 1.5em;
+    }
     a {
       display: block;
-      padding: .5em;
-      &.active {
-        color: $orange;
+      padding: 1em;
+      border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+      &:hover {
+        background: $orange;
+        color: #fff;
         text-decoration: none;
       }
+      &.active, &:focus {
+        color: $orange;
+        background: #fff;
+        text-decoration: none;
+      }
+      &.active:hover {
+          cursor: default;
+        }
     }
   }
 }
