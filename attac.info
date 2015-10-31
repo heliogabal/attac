@@ -34,8 +34,6 @@ regions[sidebar_second] = Sidebar Second
 regions[help] = Help
 regions[highlighted] = Highlighted
 
-
-
 ;-------------- C S S -------------
 stylesheets[all][] = css/style.css
 stylesheets[all][] = fonts/font-awesome.min.css
@@ -149,6 +147,10 @@ settings[mothership_classes_body_freeform] = ''
 settings[mothership_classes_block_freeform] = ''
 settings[mothership_classes_node_freeform] = ''
 settings[mothership_classes_region_freeform] = ''
+
+fonts[google_fonts_api][] = "Roboto&subset=latin#300"
+fonts[google_fonts_api][] = "Ubuntu&subset=latin#300"
+fonts[google_fonts_api][] = "Ubuntu&subset=latin#700"
 
 ; Information added by drupal.org packaging script on 2013-07-16
 version = "7.x-1.x-dev"

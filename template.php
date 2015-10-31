@@ -109,3 +109,40 @@ function attac_preprocess_field(&$vars,$hook) {
 function attac_preprocess_maintenance_page(){
   //  kpr($vars['content']);
 }
+
+/**
+ * Alter a scald library item.
+ *
+ * Implements hook_scald_dnd_library_item_alter()
+ *
+ * @param $atom
+ *   The atom object.
+ * @param $item
+ *   The scald library item.
+ */
+function attac_scald_dnd_library_item_alter($atom, &$item) {
+  $item['meta']['legend'] = "
+   <div class='meta'>
+    <!--copyright={$atom->sid}-->{$atom->rendered->title}<!--END copyright={$atom->sid}-->
+  </div>
+ ";
+}
+function attac_theme_sdl_editor_legend($variables) {
+  $atom = $variables['atom'];
+
+  if (!empty($atom->rendered->authors)) {
+    foreach ($atom->rendered->authors as $author) {
+      $links[] = $author->link;
+    }
+    $by = implode(', ', $links);
+  }
+  else {
+    $by = "";
+  }
+  $by = t('by !name', array('!name' => $by));
+  return "
+  <div class='meta'>
+    <!--copyright={$atom->sid}-->{$atom->rendered->title}, {$by}<!--END copyright={$atom->sid}-->
+  </div>
+  ";
+}

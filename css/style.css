@@ -1861,11 +1861,11 @@ input#panels-ipe-cancel {
   *display: inline;
   color: #ddd;
   text-shadow: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   border: none; }
 
 /* line 25, sass/components/_buttons.scss */
@@ -2217,9 +2217,7 @@ input#panels-ipe-cancel:active {
     background-color: #d9d9d9 \9;
     background-image: none;
     outline: 0;
-    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+    /*@include box-shadow(inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05));*/ }
   /* line 330, sass/components/_buttons.scss */
   .btn.disabled, .btn[disabled] {
     cursor: default;
@@ -2521,8 +2519,8 @@ input[type="submit"].btn {
 
 /* Plenum Buttons */
 /* line 516, sass/components/_buttons.scss */
-.field-name-field-plenum-wann,
-.field-name-field-termin-wo {
+.node-type-plenum .field-name-field-plenum-wann,
+.node-type-plenum .field-name-field-termin-wo {
   margin: .5em 0; }
 
 /* line 519, sass/components/_buttons.scss */
@@ -2536,6 +2534,20 @@ input[type="submit"].btn {
   font-family: FontAwesome;
   content: "\f041";
   padding: 0 .5em 0 0; }
+
+/* line 529, sass/components/_buttons.scss */
+.plenum .view-footer {
+  border-top: 1px solid #ddd; }
+  /* line 531, sass/components/_buttons.scss */
+  .plenum .view-footer p {
+    margin: 0; }
+
+/* line 535, sass/components/_buttons.scss */
+.flat {
+  float: right;
+  padding: .5em;
+  margin: .5em;
+  text-transform: uppercase; }
 
 /* line 9, sass/components/_alerts.scss */
 .alert {
@@ -2625,7 +2637,7 @@ nav.hauptmenu ul {
         color: #fff;
         text-decoration: none; }
       /* line 31, sass/components/_navs.scss */
-      nav.hauptmenu ul li a.active {
+      nav.hauptmenu ul li a.active, nav.hauptmenu ul li a.active-trail {
         background: #1db2f7;
         color: #fff;
         text-decoration: none; }
@@ -3763,7 +3775,9 @@ a.label:hover, a.badge:hover {
 
 /* line 18, sass/components/_news.scss */
 .news {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
   /* line 20, sass/components/_news.scss */
   .news aside {
     overflow: hidden;
@@ -3807,14 +3821,21 @@ a.label:hover, a.badge:hover {
 
 /* line 1, sass/components/_header.scss */
 #header-wrapper {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+  @media (min-width: 767px) {
+    /* line 1, sass/components/_header.scss */
+    #header-wrapper {
+      margin-bottom: 2em; } }
 
-/* line 4, sass/components/_header.scss */
+/* line 8, sass/components/_header.scss */
 .logo, .plenum, .banner {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-/* line 8, sass/components/_header.scss */
+/* line 12, sass/components/_header.scss */
 .logo a {
   display: block; }
 
@@ -3859,38 +3880,86 @@ footer nav {
 /* line 1, sass/base/_blocks.scss */
 .card {
   background: #fff;
-  margin: 2em 0 1em 0;
-  /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
-  border-radius: 2px;
+  margin: 0 0 2em 0;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   clear: both; }
   /* line 7, sass/base/_blocks.scss */
   .card h2 {
-    background: #f0f0f0;
-    padding: 0 0 .5em 0;
-    margin: 0; }
-  /* line 12, sass/base/_blocks.scss */
+    margin: 0;
+    border-bottom: 1px solid #f7941d;
+    padding: 0.5em .6em;
+    font-size: 24px;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0; }
+  /* line 14, sass/base/_blocks.scss */
   .card h2.panel-title {
     background: #fff;
     margin: 13px 0;
-    padding: 0; }
-  /* line 17, sass/base/_blocks.scss */
+    padding: 0;
+    border: 0;
+    font-size: 30px; }
+  /* line 21, sass/base/_blocks.scss */
   .card .panel-heading {
     overflow: hidden;
     padding: 0 1em; }
-  /* line 21, sass/base/_blocks.scss */
+  /* line 25, sass/base/_blocks.scss */
   .card form {
     padding: 0 1em; }
-  /* line 24, sass/base/_blocks.scss */
+  /* line 28, sass/base/_blocks.scss */
   .card .panel-body {
     padding: 1em; }
+  /* line 31, sass/base/_blocks.scss */
+  .card .inner {
+    padding: 1em; }
+  /* line 34, sass/base/_blocks.scss */
+  .card .protokoll {
+    padding: 0 1em; }
+  /* line 37, sass/base/_blocks.scss */
+  .card .protokoll h2.title {
+    background: #fff; }
 
-/* line 28, sass/base/_blocks.scss */
-.protokoll {
-  padding: 0 1em; }
+/* line 42, sass/base/_blocks.scss */
+.not-front .main-content,
+.panel-col {
+  background: #fff;
+  padding: 0 2em 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
 
-/* line 31, sass/base/_blocks.scss */
-.protokoll h2.title {
-  background: #fff; }
+/* line 48, sass/base/_blocks.scss */
+#panel-wrapper {
+  margin-bottom: 100px; }
+  /* line 50, sass/base/_blocks.scss */
+  #panel-wrapper .main-content {
+    background: transparent;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  /* line 56, sass/base/_blocks.scss */
+  #panel-wrapper .panel-col {
+    margin: 0 2em; }
 
 /* line 1, sass/components/_social.scss */
 span.follow-link-wrapper a {
@@ -3920,7 +3989,11 @@ a.follow-link:hover {
   margin: 0 1em 0 0; }
 /* line 5, sass/components/_calendar.scss */
 .pager li {
-  border-radius: 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
   border: 0; }
   /* line 8, sass/components/_calendar.scss */
   .pager li:hover {
@@ -3962,7 +4035,11 @@ a.follow-link:hover {
   padding: 0;
   margin: 5px;
   width: auto;
-  border-radius: 3px; }
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
 /* line 52, sass/components/_calendar.scss */
 .calendar-calendar .month-view .full tr td.single-day.today {
   border-bottom: 2px solid #f7941d;
@@ -3984,8 +4061,8 @@ a.follow-link:hover {
 /* line 71, sass/components/_calendar.scss */
 .page-termine .view-filters {
   position: absolute;
-  right: 0;
-  top: -5em; }
+  right: 1em;
+  top: 1em; }
 /* line 76, sass/components/_calendar.scss */
 .page-termine .views-exposed-form .views-exposed-widget {
   padding: 0; }
@@ -4037,31 +4114,44 @@ a.follow-link:hover {
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {
   padding: 1em; }
 
+/*## Leaflet fix##*/
+/* line 125, sass/components/_calendar.scss */
+.colorbox-hide {
+  display: block !important;
+  position: absolute;
+  left: -10000px;
+  top: -10000px; }
+
+/* line 131, sass/components/_calendar.scss */
+.field-name-field-termin-wo .leaflet-container {
+  width: 787px;
+  height: 400px; }
+
 /* Upcoming Block */
-/* line 126, sass/components/_calendar.scss */
+/* line 137, sass/components/_calendar.scss */
 .upcoming ul {
   margin: 0; }
-/* line 129, sass/components/_calendar.scss */
+/* line 140, sass/components/_calendar.scss */
 .upcoming li.termin {
   list-style: none;
   padding: .5em 1em;
   border-bottom: 1px solid rgba(160, 160, 160, 0.2);
   overflow: hidden; }
-  /* line 134, sass/components/_calendar.scss */
+  /* line 145, sass/components/_calendar.scss */
   .upcoming li.termin a {
     display: block; }
-/* line 138, sass/components/_calendar.scss */
+/* line 149, sass/components/_calendar.scss */
 .upcoming li.termin:before {
   font-family: FontAwesome;
   content: "\f073";
   float: left;
   padding-right: .5em; }
-/* line 144, sass/components/_calendar.scss */
+/* line 155, sass/components/_calendar.scss */
 .upcoming time {
   float: left;
   clear: left;
   font-size: small; }
-/* line 149, sass/components/_calendar.scss */
+/* line 160, sass/components/_calendar.scss */
 .upcoming .was {
   float: left;
   clear: left;
@@ -4069,54 +4159,54 @@ a.follow-link:hover {
   line-height: 1; }
 
 @media screen and (max-width: 1023px) {
-  /* line 158, sass/components/_calendar.scss */
+  /* line 169, sass/components/_calendar.scss */
   .page-termine .view-filters {
     position: static; }
 
-  /* line 161, sass/components/_calendar.scss */
+  /* line 172, sass/components/_calendar.scss */
   .date-box {
     display: none; }
 
-  /* line 164, sass/components/_calendar.scss */
+  /* line 175, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
     margin: 1em; }
 
-  /* line 167, sass/components/_calendar.scss */
+  /* line 178, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full td, .calendar-calendar .week-view .full td, .calendar-calendar .day-view td {
     padding: .5em; }
 
-  /* line 170, sass/components/_calendar.scss */
+  /* line 181, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr td.single-day.today {
     border: 5px solid #f7941d; }
 
-  /* line 173, sass/components/_calendar.scss */
+  /* line 184, sass/components/_calendar.scss */
   .view .date-nav-wrapper .date-heading {
     text-align: left; }
 
-  /* line 176, sass/components/_calendar.scss */
+  /* line 187, sass/components/_calendar.scss */
   .calendar-calendar .month-view table.full {
     position: relative; }
 
-  /* line 179, sass/components/_calendar.scss */
+  /* line 190, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr td {
     width: 100%;
     float: left;
     text-align: left; }
 
-  /* line 184, sass/components/_calendar.scss */
+  /* line 195, sass/components/_calendar.scss */
   .calendar-calendar tbody tr:hover td {
     background: none; }
 
-  /* line 187, sass/components/_calendar.scss */
+  /* line 198, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr.single-day {
     border-top: 1px solid #ccc; }
 
-  /* line 190, sass/components/_calendar.scss */
+  /* line 201, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full tr td.single-day:before {
     content: attr(data-day-of-month) ".\0000a0" attr(headers);
     font-weight: bold; }
 
-  /* line 198, sass/components/_calendar.scss */
+  /* line 209, sass/components/_calendar.scss */
   .calendar-calendar .month-view .full thead tr,
   .calendar-calendar .month-view .full tr th.days,
   .calendar-calendar .month-view .full tr td.date-box,
@@ -4172,41 +4262,93 @@ a.follow-link:hover {
   margin-top: 0.8em; }
 
 /* Hide Scald Author and Tags Fields for now */
-/* line 39, sass/components/_ags.scss */
-.field-name-scald-authors,
-.field-name-scald-tags,
-.dnd-caption-wrapper {
+/* line 37, sass/components/_ags.scss */
+.field-name-scald-authors {
   display: none; }
+
+/**
+ * @file
+ * Stylesheet used to provide align and wrap functionality for atoms
+ *
+ * It is automatically included when the DnD plugin is used.
+ */
+/* line 48, sass/components/_ags.scss */
+.atom-align-right {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em; }
+
+/* line 54, sass/components/_ags.scss */
+.atom-align-left {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em; }
+
+/* line 60, sass/components/_ags.scss */
+.atom-align-center {
+  margin: 0 auto;
+  display: table;
+  margin-bottom: 1em; }
+
+/**
+ * The following rules make legend look nice with responsive images.
+ */
+/* line 69, sass/components/_ags.scss */
+.dnd-widget-wrapper {
+  display: table; }
+
+/* line 72, sass/components/_ags.scss */
+.dnd-widget-wrapper img {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
+/* line 77, sass/components/_ags.scss */
+.dnd-caption-wrapper {
+  display: table-caption;
+  caption-side: bottom;
+  font-style: italic;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+  text-align: center; }
+
+/* line 1, sass/components/_protokolle.scss */
+.protokoll .field-name-title p {
+  margin: 1em 0 0 1em; }
 
 /* line 1, sass/styles/_flat.scss */
 body {
   background: #f0f0f0; }
 
 /* line 4, sass/styles/_flat.scss */
-#header-wrapper {
-  background: #fff; }
-
-/* line 7, sass/styles/_flat.scss */
 #footer-wrapper {
   background: #0074AA;
   padding: 1em 0; }
-  /* line 10, sass/styles/_flat.scss */
+  /* line 7, sass/styles/_flat.scss */
   #footer-wrapper footer {
     color: #fff; }
-    /* line 12, sass/styles/_flat.scss */
+    /* line 9, sass/styles/_flat.scss */
     #footer-wrapper footer a {
       color: #fff; }
 
-/* line 17, sass/styles/_flat.scss */
+/* line 14, sass/styles/_flat.scss */
 .btn-flat {
   background: none repeat scroll 0 0 #f7941d;
-  border-radius: 2px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.23), 0px 3px 10px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.23), 0px 3px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.23), 0px 3px 10px rgba(0, 0, 0, 0.16);
   color: #fff;
-  padding: 1em;
+  padding: 1em 0;
+  margin: .5em;
+  width: auto;
   letter-spacing: .5px; }
 
-/* line 25, sass/styles/_flat.scss */
+/* line 24, sass/styles/_flat.scss */
 .btn-flat:hover {
   text-decoration: none;
   color: #fff;

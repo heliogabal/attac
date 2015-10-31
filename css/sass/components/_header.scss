@@ -1,5 +1,9 @@
 #header-wrapper {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+  @include box-shadow($shadow);
+  @include breakpoint($br-tablet) {
+    margin-bottom: 2em;
+  }
 }
 .logo, .plenum, .banner {
   margin-top: 1em;

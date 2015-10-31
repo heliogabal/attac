@@ -1,18 +1,22 @@
 .card {
   background: #fff;
-  margin: 2em 0 1em 0;
-  /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);*/
-  border-radius: 2px;
+  margin: 0 0 2em 0;
+  @include box-shadow($shadow);
+  @include border-radius($border-radius);
   clear: both;
   h2 {
-    background: #f0f0f0;
-    padding: 0 0 .5em 0;
     margin: 0;
+    border-bottom: 1px solid #f7941d;
+    padding: 0.5em .6em;
+    font-size: 24px;
+    @include border-radius($border-radius $border-radius 0 0);
   }
   h2.panel-title {
     background: #fff;
     margin: 13px 0;
     padding: 0;
+    border: 0;
+    font-size: 30px;
   }
   .panel-heading {
     overflow: hidden;
@@ -24,10 +28,32 @@
   .panel-body {
     padding: 1em;
   }
-}
+  .inner {
+    padding: 1em;
+  }
 .protokoll {
     padding: 0 1em;
   }
 .protokoll h2.title {
   background: #fff;
+  }
+}
+.not-front .main-content,
+.panel-col {
+    background: #fff;
+    padding: 0 2em 1em;
+    @include border-radius($border-radius);
+    @include box-shadow($shadow);
+}
+#panel-wrapper {
+  margin-bottom: 100px;
+  .main-content {
+    background: transparent;
+    padding: 0;
+    @include border-radius(0);
+    @include box-shadow(none);
+  }
+  .panel-col {
+    margin: 0 2em;
+  }
 }

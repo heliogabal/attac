@@ -28,7 +28,7 @@ nav.hauptmenu {
           color: #fff;
           text-decoration: none;
         }
-        &.active {
+        &.active, &.active-trail {
           background: $blue;
           color: #fff;
           text-decoration: none;
