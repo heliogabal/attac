@@ -2523,26 +2523,53 @@ input[type="submit"].btn {
 .node-type-plenum .field-name-field-termin-wo {
   margin: .5em 0; }
 
-/* line 519, sass/components/_buttons.scss */
+/* News and Termin Buttons */
+/* line 520, sass/components/_buttons.scss */
 .field-name-field-plenum-wann:before {
   font-family: FontAwesome;
   content: "\f017";
   padding: 0 .5em 0 0; }
 
-/* line 524, sass/components/_buttons.scss */
+/* line 525, sass/components/_buttons.scss */
+.field-name-field-termin-wann:before {
+  font-family: FontAwesome;
+  content: "\f017";
+  padding: 0 .5em 0 0; }
+
+/* line 530, sass/components/_buttons.scss */
+.field-name-field-termin-was:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  padding: 0 .5em 0 0; }
+
+/* line 535, sass/components/_buttons.scss */
 .field-name-field-termin-wo:before {
   font-family: FontAwesome;
   content: "\f041";
   padding: 0 .5em 0 0; }
 
-/* line 529, sass/components/_buttons.scss */
+/* line 540, sass/components/_buttons.scss */
+.field-name-adresskarte .field-name-field-termin-wo:before {
+  font-family: FontAwesome;
+  content: "";
+  padding: 0; }
+
+/* line 545, sass/components/_buttons.scss */
+.field-name-field-termin-wo .field-name-title {
+  display: inline-block; }
+
+/* line 548, sass/components/_buttons.scss */
+#colorbox .field-name-field-termin-wo {
+  margin: 1em 0; }
+
+/* line 552, sass/components/_buttons.scss */
 .plenum .view-footer {
   border-top: 1px solid #ddd; }
-  /* line 531, sass/components/_buttons.scss */
+  /* line 554, sass/components/_buttons.scss */
   .plenum .view-footer p {
     margin: 0; }
 
-/* line 535, sass/components/_buttons.scss */
+/* line 558, sass/components/_buttons.scss */
 .flat {
   float: right;
   padding: .5em;
@@ -3789,21 +3816,6 @@ a.label:hover, a.badge:hover {
       padding: 1em;
       position: relative; }
     /* line 29, sass/components/_news.scss */
-    .news aside .field-name-field-termin-wann:before {
-      font-family: FontAwesome;
-      content: "\f017";
-      padding: 0 .5em 0 0; }
-    /* line 34, sass/components/_news.scss */
-    .news aside .field-name-field-termin-was:before {
-      font-family: FontAwesome;
-      content: "\f02b";
-      padding: 0 .5em 0 0; }
-    /* line 39, sass/components/_news.scss */
-    .news aside .field-name-field-termin-wo:before {
-      font-family: FontAwesome;
-      content: "\f041";
-      padding: 0 .5em 0 0; }
-    /* line 44, sass/components/_news.scss */
     .news aside .more-link {
       float: right; }
 
@@ -3811,10 +3823,9 @@ a.label:hover, a.badge:hover {
 .logos img {
   margin: 0 1em 1em 0;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-  filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale"); }
-/* line 9, sass/components/_partner_logos.scss */
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%); }
+/* line 10, sass/components/_partner_logos.scss */
 .logos img:hover {
   -webkit-filter: none;
   filter: none; }
@@ -3940,12 +3951,13 @@ footer nav {
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  position: relative; }
 
-/* line 48, sass/base/_blocks.scss */
+/* line 49, sass/base/_blocks.scss */
 #panel-wrapper {
   margin-bottom: 100px; }
-  /* line 50, sass/base/_blocks.scss */
+  /* line 51, sass/base/_blocks.scss */
   #panel-wrapper .main-content {
     background: transparent;
     padding: 0;
@@ -3957,7 +3969,7 @@ footer nav {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
-  /* line 56, sass/base/_blocks.scss */
+  /* line 57, sass/base/_blocks.scss */
   #panel-wrapper .panel-col {
     margin: 0 2em; }
 

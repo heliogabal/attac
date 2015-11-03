@@ -516,9 +516,20 @@ input[type="submit"].btn {
 .node-type-plenum .field-name-field-termin-wo {
   margin: .5em 0;
 }
+/* News and Termin Buttons */
 .field-name-field-plenum-wann:before {
       font-family: FontAwesome;
       content: "\f017";
+      padding: 0 .5em 0 0;
+    }
+.field-name-field-termin-wann:before {
+      font-family: FontAwesome;
+      content: "\f017";
+      padding: 0 .5em 0 0;
+    }
+.field-name-field-termin-was:before {
+      font-family: FontAwesome;
+      content: "\f02b";
       padding: 0 .5em 0 0;
     }
 .field-name-field-termin-wo:before {
@@ -526,6 +537,18 @@ input[type="submit"].btn {
       content: "\f041";
       padding: 0 .5em 0 0;
     }
+.field-name-adresskarte .field-name-field-termin-wo:before {
+      font-family: FontAwesome;
+      content: "";
+      padding: 0;
+    }
+.field-name-field-termin-wo .field-name-title {
+    display: inline-block;
+}
+#colorbox .field-name-field-termin-wo {
+  margin: 1em 0;
+}
+
 .plenum .view-footer {
   border-top: 1px solid #ddd;
   p {
