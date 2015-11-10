@@ -24,7 +24,7 @@ h1, h2 {
     @include box-shadow($shadow-strong);
     color: #fff;
     padding: 1em 0;
-    margin: .5em;
+    margin: .5em .5em 2em .5em;
     width: auto;
     letter-spacing: .5px;
 }

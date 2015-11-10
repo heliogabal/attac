@@ -4,6 +4,7 @@
   @include box-shadow($shadow);
   @include border-radius($border-radius);
   clear: both;
+  overflow: hidden;
   h2 {
     margin: 0;
     border-bottom: 1px solid #f7941d;
@@ -53,8 +54,5 @@
     padding: 0;
     @include border-radius(0);
     @include box-shadow(none);
-  }
-  .panel-col {
-    margin: 0 2em;
   }
 }

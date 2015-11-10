@@ -4,6 +4,23 @@
 
 @import "compass/css3";
 
+#user-login-form {
+  margin-top: 1em;
+  label {
+    display: none;
+  }
+  ul {
+    margin: .5em 0 .5em 6px;
+  }
+  li {
+    list-style: none;
+  }
+  #edit-submit {
+    float: right;
+    margin-bottom: 2em;
+  }
+}
+
 // `Widths
 //----------------------------------------------------------------------------------------------------
 

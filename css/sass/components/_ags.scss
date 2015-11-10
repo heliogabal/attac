@@ -83,3 +83,20 @@
   text-align: center;
 }
 
+/* Three col Panel with some more white space */
+.panel-3col .panel-col-first .inside {
+    margin: 0 2em 1em 0;
+}
+.panel-3col .panel-col .inside {
+    margin: 0 0 1em;
+}
+.panel-3col .panel-col-last .inside {
+    margin: 0 0 1em 2em;
+}
+/* AG News */
+
+.ag-news, .ag-news .inner {
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  overflow: hidden;
+}
+
