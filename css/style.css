@@ -3834,8 +3834,9 @@ a.label:hover, a.badge:hover {
       float: left;
       margin-right: 1em;
       padding: 1em;
-      position: relative; }
-    /* line 29, sass/components/_news.scss */
+      position: relative;
+      max-width: 220px; }
+    /* line 30, sass/components/_news.scss */
     .news aside .more-link {
       float: right; }
 
