@@ -96,7 +96,7 @@ $debug: 'true';
 }
 @include breakpoint($desk, true) {
   .main-content p {
-    max-width: 40em;
+    max-width: 45em;
   }
   /*.siteinfo {
     @include grid-span(3, 1);
