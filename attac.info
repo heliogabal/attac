@@ -62,7 +62,7 @@ stylesheets[all][] = mothership-layout.css
 ; https://github.com/tuupola/jquery_lazyload
 ; scripts[] = js/jquery.lazyload.min.js
 
-;scripts[] = js/script.js
+scripts[] = js/script.js
 
 ;-------------- Panel layouts --------------
 plugins[panels][styles] = plugins/styles
