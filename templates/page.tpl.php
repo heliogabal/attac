@@ -33,6 +33,9 @@
                 <img src="<?php print $logo; ?>" class="logo-img" alt="<?php print t('Home'); ?>" />
               </a>
             </div>
+            <div class="attacde">
+              <a href="http://attac.de" title="Zu Attac Deutschland">attac.de</a>
+            </div>
           <?php endif; ?>
 
           <?php if($site_name OR $site_slogan ): ?>

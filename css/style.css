@@ -3852,6 +3852,10 @@ a.label:hover, a.badge:hover {
   -webkit-filter: none;
   filter: none; }
 
+/* line 16, sass/components/_partner_logos.scss */
+#views-form-partner-logos-block tbody, #views-form-partner-logos-block td {
+  border: 0; }
+
 /* line 1, sass/components/_header.scss */
 #header-wrapper {
   background: #fff;
