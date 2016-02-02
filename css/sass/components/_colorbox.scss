@@ -4,4 +4,13 @@
     padding: 0;
     box-shadow: none;
   }
+  #cboxTitle {
+    display: none;
+  }
+  button:active,
+  button.active {
+    outline: 0;
+    background-image: none;
+    @include box-shadow(none);
+  }
 }

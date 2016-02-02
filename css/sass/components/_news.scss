@@ -5,6 +5,10 @@
 .field-name-field-news-bild {
   float: left;
   margin: 0 2em 1em 0;
+  .field-type-taxonomy-term-reference {
+    width: 250px;
+    font-size: .8em;
+  }
 }
 .label-above, .label-inline {
   font-weight: bold;

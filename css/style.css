@@ -1279,9 +1279,9 @@ button:focus,
 a.button:focus,
 select:focus,
 textarea:focus {
-  -webkit-box-shadow: #0066ff 0 0 5px 0;
-  -moz-box-shadow: #0066ff 0 0 5px 0;
-  box-shadow: #0066ff 0 0 5px 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   z-index: 1; }
 
 /* line 92, sass/base/_forms.scss */
@@ -3807,37 +3807,41 @@ a.label:hover, a.badge:hover {
 .field-name-field-news-bild {
   float: left;
   margin: 0 2em 1em 0; }
+  /* line 8, sass/components/_news.scss */
+  .field-name-field-news-bild .field-type-taxonomy-term-reference {
+    width: 250px;
+    font-size: .8em; }
 
-/* line 9, sass/components/_news.scss */
+/* line 13, sass/components/_news.scss */
 .label-above, .label-inline {
   font-weight: bold; }
 
-/* line 12, sass/components/_news.scss */
+/* line 16, sass/components/_news.scss */
 .label-inline {
   display: inline; }
 
-/* line 15, sass/components/_news.scss */
+/* line 19, sass/components/_news.scss */
 .field-name-field-koordinaten {
   margin-top: 1em; }
 
-/* line 18, sass/components/_news.scss */
+/* line 22, sass/components/_news.scss */
 .news {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
-  /* line 20, sass/components/_news.scss */
+  /* line 24, sass/components/_news.scss */
   .news aside {
     overflow: hidden;
     border-top: 1px solid #ddd;
     clear: both; }
-    /* line 24, sass/components/_news.scss */
+    /* line 28, sass/components/_news.scss */
     .news aside .field {
       float: left;
       margin-right: 1em;
       padding: 1em;
       position: relative;
       max-width: 220px; }
-    /* line 31, sass/components/_news.scss */
+    /* line 35, sass/components/_news.scss */
     .news aside .more-link {
       float: right; }
 
@@ -4390,6 +4394,17 @@ a.follow-link-facebook {
 /* line 3, sass/components/_colorbox.scss */
 #colorbox .panel-col {
   padding: 0;
+  box-shadow: none; }
+/* line 7, sass/components/_colorbox.scss */
+#colorbox #cboxTitle {
+  display: none; }
+/* line 11, sass/components/_colorbox.scss */
+#colorbox button:active,
+#colorbox button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
   box-shadow: none; }
 
 /* line 1, sass/styles/_flat.scss */
