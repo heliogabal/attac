@@ -53,16 +53,24 @@ $debug: 'true';
     width: 90%
   }
 }
+
+  .panel-3col .panel-col-first, .panel-3col .panel-col, .panel-3col .panel-col-last {
+    @include grid-span(4,1);
+  }
+
 @include breakpoint($tab, true) {
   .one-sidebar.sidebar-first .sidebar-first,
-  .two-sidebars .sidebar-first {
+  .two-sidebars .sidebar-first,
+  .panel-3col .panel-col-first {
     @include grid-span(4, 1);
   }
   .one-sidebar.sidebar-first .main-content,
-  .two-sidebars .main-content {
+  .two-sidebars .main-content,
+  .panel-3col .panel-col {
     @include grid-span(8, 5);
   }
-  .two-sidebars .sidebar-second {
+  .two-sidebars .sidebar-second,
+  .panel-3col .panel-col-last {
     @include grid-span(4, 1);
     clear: left;
   }
@@ -115,19 +123,24 @@ $debug: 'true';
   .plenum {
     @include grid-span(3, 10);
   }*/
-  .one-sidebar.sidebar-first .sidebar-first {
+  .one-sidebar.sidebar-first .sidebar-first,
+  .panel-3col .panel-col-first {
     @include grid-span(3, 1);
   }
-  .one-sidebar.sidebar-first .main-content {
+  .one-sidebar.sidebar-first .main-content,
+  .panel-3col .panel-col {
     @include grid-span(9, 4);
   }
-  .two-sidebars .sidebar-first {
+  .two-sidebars .sidebar-first,
+  .panel-3col .panel-col-first {
     @include grid-span(3, 1);
   }
-  .two-sidebars .main-content {
+  .two-sidebars .main-content,
+  .panel-3col .panel-col {
     @include grid-span(6, 4);
   }
-  .two-sidebars .sidebar-second {
+  .two-sidebars .sidebar-second,
+  .panel-3col .panel-col-last {
     @include grid-span(3, 10);
   }
 }
