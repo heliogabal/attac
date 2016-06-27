@@ -19,7 +19,7 @@
 .field-name-field-koordinaten {
   margin-top: 1em;
 }
-.news {
+.news, .front .article {
   @include box-shadow($shadow);
   aside {
     overflow: hidden;
@@ -32,8 +32,23 @@
       position: relative;
       max-width: 220px;
     }
-    .more-link {
+    .more-link,
+    .field-name-node-link {
       float: right;
+      margin: 0;
     }
+  }
+}
+.front .article {
+  background: #fff;
+  margin: 0 0 2em 0;
+  border-radius: 4px;
+  clear: both;
+  overflow: hidden;
+  .field-name-title {
+    padding: 1em 1em 0 1em;
+  }
+  .field-name-body {
+    padding: 0 1em;
   }
 }
