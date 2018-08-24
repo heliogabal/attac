@@ -62,4 +62,7 @@ DEPENDENCIES
   sass
   sass-globbing
   singularitygs
-  toolkit
+  toolkit (~> 1)
+
+BUNDLED WITH
+   1.12.5

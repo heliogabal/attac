@@ -54,7 +54,8 @@ $debug: 'true';
   }
 }
 
-  .panel-3col .panel-col-first, .panel-3col .panel-col, .panel-3col .panel-col-last {
+  .panel-3col .panel-col-first, .panel-3col .panel-col, .panel-3col .panel-col-last,
+  .panels-flexible-region-2-center, .panels-flexible-region-2-seitenspalte, .panels-flexible-region-2-sidebar  {
     @include grid-span(4,1);
   }
 
@@ -98,6 +99,16 @@ $debug: 'true';
   .plenum {
     @include grid-span(3, 10);
   }*/
+
+  .panels-flexible-region-2-center {
+    @include grid-span(3,1);
+  }
+  .panels-flexible-region-2-seitenspalte {
+    @include grid-span(6,4);
+  }
+  .panels-flexible-region-2-sidebar {
+    @include grid-span(3,10);
+  }
 }
 @include breakpoint(1090, true) {
 

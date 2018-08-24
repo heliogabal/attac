@@ -516,14 +516,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 36, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
+/* line 36, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/toolkit-1.3.8/stylesheets/toolkit/_box-sizing.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   *behavior: url('../behaviors/box-sizing/boxsizing.php'); }
 
-/* line 4, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
+/* line 4, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/toolkit-1.3.8/stylesheets/toolkit/_fluid-media.scss */
 img, video {
   max-width: 100%;
   height: auto; }
@@ -532,7 +532,7 @@ img, video {
 .sprite-sprite, .sprite-logo {
   background: url('../img/sprite-sc56163011c.png') no-repeat; }
 
-/* line 60, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .sprite-logo {
   background-position: 0 0; }
 
@@ -660,13 +660,13 @@ html {
   margin: 0 auto;
   max-width: 1600px;
   width: 95%; }
-  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .container:before, .container:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .container:after {
     clear: both; }
   @media (min-width: 70em) {
@@ -674,8 +674,9 @@ html {
     .container {
       width: 90%; } }
 
-/* line 57, sass/layout/_grid.scss */
-.panel-3col .panel-col-first, .panel-3col .panel-col, .panel-3col .panel-col-last {
+/* line 58, sass/layout/_grid.scss */
+.panel-3col .panel-col-first, .panel-3col .panel-col, .panel-3col .panel-col-last,
+.panels-flexible-region-2-center, .panels-flexible-region-2-seitenspalte, .panels-flexible-region-2-sidebar {
   width: 100%;
   float: right;
   margin-left: 0;
@@ -683,7 +684,7 @@ html {
   clear: none; }
 
 @media (min-width: 50em) {
-  /* line 64, sass/layout/_grid.scss */
+  /* line 65, sass/layout/_grid.scss */
   .one-sidebar.sidebar-first .sidebar-first,
   .two-sidebars .sidebar-first,
   .panel-3col .panel-col-first {
@@ -693,7 +694,7 @@ html {
     margin-left: 0%;
     clear: none; }
 
-  /* line 69, sass/layout/_grid.scss */
+  /* line 70, sass/layout/_grid.scss */
   .one-sidebar.sidebar-first .main-content,
   .two-sidebars .main-content,
   .panel-3col .panel-col {
@@ -703,7 +704,7 @@ html {
     margin-right: 0;
     clear: none; }
 
-  /* line 73, sass/layout/_grid.scss */
+  /* line 74, sass/layout/_grid.scss */
   .two-sidebars .sidebar-second,
   .panel-3col .panel-col-last {
     width: 31.42857%;
@@ -713,7 +714,7 @@ html {
     clear: none;
     clear: left; }
 
-  /* line 77, sass/layout/_grid.scss */
+  /* line 78, sass/layout/_grid.scss */
   .hauptmenu {
     width: 100%;
     float: right;
@@ -721,7 +722,7 @@ html {
     margin-right: 0;
     clear: none; }
 
-  /* line 80, sass/layout/_grid.scss */
+  /* line 81, sass/layout/_grid.scss */
   .siteinfo {
     width: 22.85714%;
     float: left;
@@ -730,7 +731,7 @@ html {
     clear: none;
     clear: left; }
 
-  /* line 84, sass/layout/_grid.scss */
+  /* line 85, sass/layout/_grid.scss */
   .header-region {
     width: 74.28571%;
     float: right;
@@ -738,7 +739,7 @@ html {
     margin-right: 0;
     clear: none; }
 
-  /* line 87, sass/layout/_grid.scss */
+  /* line 88, sass/layout/_grid.scss */
   .follow {
     width: 100%;
     float: right;
@@ -746,7 +747,7 @@ html {
     margin-right: 0;
     clear: none; }
 
-  /* line 90, sass/layout/_grid.scss */
+  /* line 91, sass/layout/_grid.scss */
   .search {
     width: 100%;
     float: right;
@@ -761,9 +762,32 @@ html {
   }
   .plenum {
     @include grid-span(3, 10);
-  }*/ }
-@media (min-width: 70em) {
+  }*/
+  /* line 103, sass/layout/_grid.scss */
+  .panels-flexible-region-2-center {
+    width: 22.85714%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none; }
+
   /* line 106, sass/layout/_grid.scss */
+  .panels-flexible-region-2-seitenspalte {
+    width: 48.57143%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.71429%;
+    clear: none; }
+
+  /* line 109, sass/layout/_grid.scss */
+  .panels-flexible-region-2-sidebar {
+    width: 22.85714%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+@media (min-width: 70em) {
+  /* line 117, sass/layout/_grid.scss */
   .main-content p {
     max-width: 45em; }
 
@@ -784,7 +808,7 @@ html {
   .plenum {
     @include grid-span(3, 10);
   }*/
-  /* line 127, sass/layout/_grid.scss */
+  /* line 138, sass/layout/_grid.scss */
   .one-sidebar.sidebar-first .sidebar-first,
   .panel-3col .panel-col-first {
     width: 22.85714%;
@@ -793,7 +817,7 @@ html {
     margin-left: 0%;
     clear: none; }
 
-  /* line 131, sass/layout/_grid.scss */
+  /* line 142, sass/layout/_grid.scss */
   .one-sidebar.sidebar-first .main-content,
   .panel-3col .panel-col {
     width: 74.28571%;
@@ -802,7 +826,7 @@ html {
     margin-right: 0;
     clear: none; }
 
-  /* line 135, sass/layout/_grid.scss */
+  /* line 146, sass/layout/_grid.scss */
   .two-sidebars .sidebar-first,
   .panel-3col .panel-col-first {
     width: 22.85714%;
@@ -811,7 +835,7 @@ html {
     margin-left: 0%;
     clear: none; }
 
-  /* line 139, sass/layout/_grid.scss */
+  /* line 150, sass/layout/_grid.scss */
   .two-sidebars .main-content,
   .panel-3col .panel-col {
     width: 48.57143%;
@@ -820,7 +844,7 @@ html {
     margin-left: 25.71429%;
     clear: none; }
 
-  /* line 143, sass/layout/_grid.scss */
+  /* line 154, sass/layout/_grid.scss */
   .two-sidebars .sidebar-second,
   .panel-3col .panel-col-last {
     width: 22.85714%;
@@ -1082,13 +1106,13 @@ dd {
   *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
   /* non-JS fallback */
   *zoom: 1; }
-  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .dl-horizontal:before, .dl-horizontal:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .dl-horizontal:after {
     clear: both; }
   /* line 142, sass/base/_type.scss */
@@ -3057,7 +3081,7 @@ nav.hauptmenu ul {
   *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
   /* non-JS fallback */
   *zoom: 1; }
-  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .nav-tabs:before, .nav-tabs:after,
   .nav-pills:before,
   .nav-pills:after {
@@ -3065,7 +3089,7 @@ nav.hauptmenu ul {
     display: block;
     height: 0;
     overflow: hidden; }
-  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .nav-tabs:after,
   .nav-pills:after {
     clear: both; }
@@ -3258,13 +3282,13 @@ nav.hauptmenu ul {
   *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
   /* non-JS fallback */
   *zoom: 1; }
-  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .tabbable:before, .tabbable:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .tabbable:after {
     clear: both; }
 
@@ -3516,13 +3540,13 @@ nav.hauptmenu ul {
   *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
   /* non-JS fallback */
   *zoom: 1; }
-  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 48, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .pager:before, .pager:after {
     content: ".";
     display: block;
     height: 0;
     overflow: hidden; }
-  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.2.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+  /* line 55, ../../../../../../../../../../home/o4507778742.ftp/.rvm/gems/ruby-2.3.1/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
   .pager:after {
     clear: both; }
 
